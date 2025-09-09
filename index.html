@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <div class="logo" aria-label="Charity Water Logo" role="img">
+      Charity: Water
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section id="hero" aria-labelledby="hero-title">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
+           alt="Children happily drinking clean water from a new pump." class="hero-img">
+      <h1 id="hero-title">Clean Water for Everyone</h1>
+      <p>Together, we can end the water crisis and bring clean, safe drinking water to people in need.</p>
+      <a href="#donate" class="cta-btn" role="button" aria-label="Donate Now">Donate Now</a>
+    </section>
+    <section id="mission" aria-labelledby="mission-title">
+      <h2 id="mission-title">Our Mission</h2>
+      <div class="mission-row">
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80"
+             alt="Community members celebrating at a newly constructed well." class="mission-img">
+        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80"
+             alt="Children gathering clean water from a safe source." class="mission-img">
+        <p>
+          Charity: Water is a non-profit organization bringing clean and safe drinking water to people in developing countries.
+          Our vision is a world where everyone has access to safe water. Since our founding, we have funded thousands of water projects in dozens of countries.
+        </p>
+      </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="projects-list">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+               alt="A new well being constructed in a rural Ethiopian village." class="project-img">
+          <h3>Well Construction in Ethiopia</h3>
+          <p>Providing sustainable access to clean water for rural villages in Ethiopia.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1453824979081-1f1466c5d8f9?auto=format&fit=crop&w=400&q=80"
+               alt="Rainwater harvesting system in operation in an Indian village." class="project-img">
+          <h3>Rainwater Harvesting in India</h3>
+          <p>Innovative rainwater harvesting systems for communities facing seasonal droughts.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80"
+               alt="Volunteers distributing clean water in Haiti after a disaster." class="project-img">
+          <h3>Clean Water in Haiti</h3>
+          <p>Restoring access to safe water after natural disasters and infrastructure challenges.</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <div class="gallery-row">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+             alt="Smiling children with clean water containers." class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&fit=crop&w=400&q=80"
+             alt="Community celebration at a water project." class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1417021423914-070979c8eb34?auto=format&fit=crop&w=400&q=80"
+             alt="A water pump in daily use by villagers." class="gallery-img">
+      </div>
+    </section>
+    <section id="donate" aria-labelledby="donate-title">
+      <h2 id="donate-title">Donate</h2>
+      <p>Your donation brings clean water to those in need. Every dollar counts!</p>
+      <form class="donate-form" aria-label="Donation form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required aria-required="true">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Charity: Water. All rights reserved.</p>
+  </footer>
+</body>
+</html>

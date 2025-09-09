@@ -1,0 +1,183 @@
+/* Charity: Water Site - Modern Styles */
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background: #f7fafc;
+  color: #222;
+}
+
+header {
+  background: #0099cc;
+  color: #fff;
+  padding: 1.5em 0 1em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ffe066;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+section {
+  margin-bottom: 3em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2em;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+.cta-btn {
+  display: inline-block;
+  background: #ffe066;
+  color: #222;
+  font-weight: 600;
+  padding: 0.75em 2em;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #ffd700;
+}
+
+.mission-row, .gallery-row, .projects-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.mission-img, .gallery-img, .project-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.project-card {
+  background: #e6f7ff;
+  border-radius: 8px;
+  padding: 1em;
+  width: 220px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  text-align: center;
+}
+.project-card h3 {
+  margin-top: 0.5em;
+  color: #0099cc;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.donate-form label {
+  font-weight: 500;
+}
+.donate-form input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.donate-form button {
+  background: #0099cc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.75em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.donate-form button:hover {
+  background: #0077a3;
+}
+#donation-message {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 0 0.5em;
+  }
+  .mission-row, .gallery-row, .projects-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .project-card {
+    width: 100%;
+  }
+  section {
+    padding: 1em;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  background: #ffe066;
+  color: #222;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
